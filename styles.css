@@ -8,10 +8,59 @@ body {
     margin: 0;
 }
 
-.content {
-    flex: 1;
+ul { 
+    list-style-type: none;
+    padding: 0;
+}
+
+.header,
+.hero,
+.footer {
+    background-color: #1f2937;
+}
+
+.content { flex: 1; }
+
+.hero .heading {
+    font-size: 48px;
+    color: #f9faf8;
+    font-weight: 900;
+}
+
+.header a,
+.hero .subtext {
+    font-size: 18px;
+    color: #e5e7eb;
+    text-decoration: none;
+}
+
+.info .heading {
+    font-size: 36px;
+    color: #1f2937;
+    font-weight: 900;
+}
+
+.quote {
+    background-color: #e5e7eb;
+}
+
+.quote .text {
+    font-size: 36px;
+    color: #1f2937;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.author {
+    font-weight: bold;
+    color: #1f2937;
+}
+
+button,
+.cta .banner {
+    background-color: #3882F6
 }
 
 * {
-    border: 0.3px solid red
+    border: 1px solid red
 }
