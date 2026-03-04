@@ -8,14 +8,25 @@ body {
     margin: 0;
 }
 
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.links {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
 .logo {
     font-size: 24px;
     color: #f9faf8;
 }
 
 ul { 
-    list-style-type: none;
-    padding: 0;
+    
 }
 
 .header,
@@ -24,7 +35,15 @@ ul {
     background-color: #1f2937;
 }
 
-.content { flex: 1; }
+.content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero, .info, .quote, .cta {
+    flex: 1
+}
 
 .hero .heading {
     font-size: 48px;
@@ -39,10 +58,25 @@ ul {
     text-decoration: none;
 }
 
+.hero {
+    display: flex;
+    justify-content: space-between;
+}
+
 .info .heading {
     font-size: 36px;
     color: #1f2937;
     font-weight: 900;
+}
+
+.info {
+    text-align: center;
+}
+
+.items {
+    display: flex;
+    justify-content: center;
+    gap: 52px;
 }
 
 .quote {
@@ -59,11 +93,41 @@ ul {
 .author {
     font-weight: bold;
     color: #1f2937;
+    text-align: right;
+}
+
+.cta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner {
+    display: flex;
+}
+
+.banner .title {
+    color: #f9faf8;
+    font-weight: 600;
+}
+
+.banner .subtext,
+.footer {
+    color: #e5e7eb;
+    font-size: smaller;
 }
 
 button,
 .cta .banner {
     background-color: #3882F6
+}
+
+button {
+    color: #f9faf8;
+}
+
+.footer {
+    text-align: center;
 }
 
 * {
