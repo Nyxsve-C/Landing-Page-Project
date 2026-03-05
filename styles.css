@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 body {
     font-family: Roboto;
     display: flex;
@@ -8,25 +18,30 @@ body {
     margin: 0;
 }
 
-.header {
+.header,
+.hero {
     display: flex;
     justify-content: space-between;
+    padding: 0 300px;
+    align-items: center;
 }
 
 .links {
     list-style-type: none;
     padding: 0;
     display: flex;
-    align-items: center;
+    gap: 25px;
+}
+
+.logo,
+.links {
+    margin: 5px 0;
 }
 
 .logo {
     font-size: 24px;
     color: #f9faf8;
-}
-
-ul { 
-    
+    margin-right: 25px;
 }
 
 .header,
@@ -41,14 +56,33 @@ ul {
     flex-direction: column;
 }
 
-.hero, .info, .quote, .cta {
+.hero,
+.info,
+.quote,
+.cta {
     flex: 1
+}
+
+.hero {
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .hero .heading {
     font-size: 48px;
     color: #f9faf8;
     font-weight: 900;
+    margin: auto 0;
+}
+
+.hero .subtext {
+    margin: 5px 0;
+}
+
+.hero .image {
+    height: 140px;
+    width: 350px;
+    flex-shrink: 0;
 }
 
 .header a,
@@ -58,19 +92,17 @@ ul {
     text-decoration: none;
 }
 
-.hero {
-    display: flex;
-    justify-content: space-between;
+.info {
+    text-align: center;
+    padding: 40px 0 80px;
 }
 
 .info .heading {
     font-size: 36px;
     color: #1f2937;
     font-weight: 900;
-}
-
-.info {
-    text-align: center;
+    margin-top: 0;
+    margin-bottom: 40px;
 }
 
 .items {
@@ -79,8 +111,24 @@ ul {
     gap: 52px;
 }
 
+.item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.item .image {
+    width: 145px;
+    height: 145px
+}
+
+.item .text {
+    margin: 5px 0 0;
+}
+
 .quote {
     background-color: #e5e7eb;
+    padding: 80px 430px 60px;
 }
 
 .quote .text {
@@ -88,22 +136,34 @@ ul {
     color: #1f2937;
     font-weight: 300;
     font-style: italic;
+    margin: 0;
 }
 
 .author {
     font-weight: bold;
     color: #1f2937;
     text-align: right;
+    margin: 0;
 }
 
 .cta {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 60px 300px;
 }
 
 .banner {
     display: flex;
+    flex: 1;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 40px 0;
+}
+
+.banner .title,
+.banner .subtext {
+    margin: 0;
 }
 
 .banner .title {
@@ -130,6 +190,6 @@ button {
     text-align: center;
 }
 
-* {
+/* * {
     border: 1px solid red
-}
+} */
