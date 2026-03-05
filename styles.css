@@ -18,11 +18,16 @@ body {
     margin: 0;
 }
 
+.header{
+    padding-top: 10px;
+}
+
 .header,
 .hero {
     display: flex;
     justify-content: space-between;
-    padding: 0 300px;
+    padding-left: 200px;
+    padding-right: 200px;
     align-items: center;
 }
 
@@ -72,16 +77,19 @@ body {
     font-size: 48px;
     color: #f9faf8;
     font-weight: 900;
-    margin: auto 0;
+    margin: 0;
 }
 
 .hero .subtext {
-    margin: 5px 0;
+    margin: 0px 0 10px;
 }
 
 .hero .image {
-    height: 140px;
-    width: 350px;
+    height: 200px;
+    width: 450px;
+}
+
+.image {
     flex-shrink: 0;
 }
 
@@ -94,7 +102,7 @@ body {
 
 .info {
     text-align: center;
-    padding: 40px 0 80px;
+    padding: 40px 0 90px;
 }
 
 .info .heading {
@@ -119,7 +127,9 @@ body {
 
 .item .image {
     width: 145px;
-    height: 145px
+    height: 145px;
+    border-radius: 13px;
+    border: 4px #3882F6 solid
 }
 
 .item .text {
@@ -150,15 +160,16 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 60px 300px;
+    padding: 80px 200px;
 }
 
 .banner {
     display: flex;
     flex: 1;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
-    padding: 40px 0;
+    padding: 50px 150px;
+    border-radius: 10px;
 }
 
 .banner .title,
@@ -184,10 +195,22 @@ button,
 
 button {
     color: #f9faf8;
+    padding: 5px 30px;
+    font-weight: bold;
+    border-radius: 7px;
+}
+
+.hero button {
+    border: 2px #3882F6 solid;
+}
+
+.cta button {
+    border: 2px white solid;
 }
 
 .footer {
     text-align: center;
+    padding: 20px
 }
 
 /* * {
